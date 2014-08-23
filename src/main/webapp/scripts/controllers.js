@@ -15,6 +15,10 @@ eseleventsApp.controller('MainController', ['$scope',
             7:{visible:false},
             8:{visible:false}
         }
+
+        $scope.showInfo = function(id,visibility) {
+            $scope.events[id].visible = visibility;
+        };
     }]);
 
 eseleventsApp.controller('AdminController', ['$scope',
