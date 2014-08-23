@@ -2,7 +2,9 @@
   "name": "eselevents",
   "version": "0.0.0",
   "description": "Description for eselevents",
-  "dependencies": {},
+  "dependencies": {
+    "grunt-wiredep": "^1.8.0"
+  },
   "devDependencies": {
     "grunt": "0.4.5",
     "grunt-autoprefixer": "0.7.5",
