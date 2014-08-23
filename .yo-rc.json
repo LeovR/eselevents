@@ -1,0 +1,18 @@
+{
+  "generator-jhipster": {
+    "baseName": "eselevents",
+    "packageName": "de.eselevents",
+    "packageFolder": "de/eselevents",
+    "authenticationType": "cookie",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "postgresql",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8"
+  }
+}
