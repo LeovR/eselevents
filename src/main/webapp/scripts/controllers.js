@@ -4,7 +4,6 @@
 
 eseleventsApp.controller('MainController', ['$scope',
     function ($scope) {
-        $('#eventgallery').justifiedGallery({rowHeight: 120,margins: 10});
         $scope.events = {
             1:{visible:false},
             2:{visible:false},
@@ -19,6 +18,8 @@ eseleventsApp.controller('MainController', ['$scope',
         $scope.showInfo = function(id,visibility) {
             $scope.events[id].visible = visibility;
         };
+
+        $('#eventgallery').justifiedGallery({rowHeight: 150,margins: 10, captions: false});
     }]);
 
 eseleventsApp.controller('AdminController', ['$scope',
