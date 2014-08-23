@@ -4,6 +4,7 @@
 
 eseleventsApp.controller('MainController', ['$scope',
     function ($scope) {
+        $('#eventgallery').justifiedGallery({rowHeight: 120,margins: 10});
     }]);
 
 eseleventsApp.controller('AdminController', ['$scope',
