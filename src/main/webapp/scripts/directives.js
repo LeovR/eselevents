@@ -101,4 +101,31 @@ angular.module('eseleventsApp')
                 });
             }
         }
-    });
+    }).directive('justified', ['$timeout', function ($timeout) {
+        return {
+            restrict: 'AE',
+            link: function (scope, el, attrs) {
+                var options = angular.extend({
+                   captions: scope.$eval(attrs.captions),
+                   rowHeight: parseInt(attrs.rowHeight) || 120,
+                   margins: parseInt(attrs.margins) || 1
+                });
+                var captions = options.captions !== false;
+                scope.$watch('$last', function (n, o) {
+                    if (n) {
+                        $timeout(function () { $(el[0]).justifiedGallery({captions: options.captions, rowHeight: options.rowHeight, margins: options.margins}); });
+                    }
+                });
+            }
+        };
+    }]).directive('repeatDone', [function () {
+        return {
+            restrict: 'A',
+            link: function (scope, element, iAttrs) {
+                var parentScope = element.parent().scope();
+                if (scope.$last){
+                    parentScope.$last = true;
+                }
+            }
+        };
+    }]);
