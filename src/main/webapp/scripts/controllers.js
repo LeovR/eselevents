@@ -4,24 +4,20 @@
 
 eseleventsApp.controller('MainController', ['$scope',
     function ($scope) {
-        $scope.events = {
-            1:{visible:false},
-            2:{visible:false},
-            3:{visible:false},
-            4:{visible:false},
-            5:{visible:false},
-            6:{visible:false},
-            7:{visible:false},
-            8:{visible:false}
-        }
+        $scope.events = [
+            {name: 'Test1', image: '12536421345_e3d86c6862_o.jpg'},
+            {name: 'Test2', image: '1xfjhx44u_500.jpg'},
+            {name: 'Test3', image: '4476615215_0e86f50f94_o.jpg'},
+            {name: 'Test4', image: '6869659175_42d86c66d7_o.jpg'},
+            {name: 'Test5', image: '6hkaievfx5_500.jpg'},
+            {name: 'Test6', image: 'buxj4dnzk_500.jpg'},
+            {name: 'Test7', image: 'pvv8x1gsxf_500.jpg'},
+            {name: 'Test8', image: 'wlimiokqjm_500.jpg'}
+        ];
 
-        $scope.showInfo = function(id,visibility) {
-            $scope.events[id].visible = visibility;
+        $scope.showInfo = function(event,visibility) {
+            event.visible = visibility;
         };
-
-        $('.eventgallery').imagesLoaded( function() {
-            $('.eventgallery').justifiedGallery({rowHeight: 220, margins: 10, captions: false});
-        });
     }]);
 
 eseleventsApp.controller('AdminController', ['$scope',
