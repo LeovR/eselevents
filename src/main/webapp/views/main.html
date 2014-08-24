@@ -1,7 +1,7 @@
 <div ng-cloak class="main-container">
     <div class="row">
         <div class="col-md-12">
-            <div class="eventgallery" justified id="justified" captions="false" row-height="220" margins="10">
+            <div class="eventgallery" justified id="justified" captions="false" row-height="220" margins="20">
                 <div class="event" ng-repeat="event in events" ng-mouseover="showInfo(event,true)" ng-mouseleave="showInfo(event,false)" ng-cloak repeat-done>
                     <img ng-src="images/events/{{event.image}}" alt="{{event.name}}"/>
                     <div class="event-info animate-show" ng-show="event.visible"><span>{{event.name}}</span></div>
