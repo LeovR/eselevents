@@ -115,5 +115,9 @@ ul#strength {
 }
 
     margin: 0 30px;
+.event {
+    background: black;
+}
+
 .main-container {
 }
