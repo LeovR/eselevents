@@ -20,7 +20,7 @@ eseleventsApp.controller('MainController', ['$scope',
         };
 
         $('#eventgallery').imagesLoaded( function() {
-            $('#eventgallery').justifiedGallery({rowHeight: 150, margins: 10, captions: false});
+            $('#eventgallery').justifiedGallery({rowHeight: 220, margins: 10, captions: false});
         });
     }]);
 
