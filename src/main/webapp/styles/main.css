@@ -124,3 +124,13 @@ ul#strength {
 
 .main-container {
 }
+
+.animate-show {
+    transition:all ease 0.5s;
+    display: block !important;
+    opacity:1;
+}
+
+.animate-show.ng-hide {
+    opacity:0;
+}
