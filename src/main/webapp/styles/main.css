@@ -119,6 +119,8 @@ ul#strength {
     font-family: 'Open Sans', sans-serif;
 }
 
+.event-info span {
+    margin-left: 10px;
 }
 
 .event {
