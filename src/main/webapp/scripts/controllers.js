@@ -19,8 +19,8 @@ eseleventsApp.controller('MainController', ['$scope',
             $scope.events[id].visible = visibility;
         };
 
-        $('#eventgallery').imagesLoaded( function() {
-            $('#eventgallery').justifiedGallery({rowHeight: 220, margins: 10, captions: false});
+        $('.eventgallery').imagesLoaded( function() {
+            $('.eventgallery').justifiedGallery({rowHeight: 220, margins: 10, captions: false});
         });
     }]);
 
