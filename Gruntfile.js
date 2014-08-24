@@ -340,6 +340,65 @@ module.exports = function (grunt) {
         target: {
             src: ['src/main/webapp/index.html']
         }
+    },
+    responsive_images: {
+        options: {
+            engine: 'im'
+        },
+        thumbnail: {
+            options: {
+                sizes: [
+                    {
+                        rename: false,
+                        width: 100,
+                        height: 100,
+                        suffix: '_t',
+                        upscale:false
+                    },{
+                        rename: false,
+                        width: 240,
+                        height: 240,
+                        suffix: '_m',
+                        upscale:false
+                    },{
+                        rename: false,
+                        width: 320,
+                        height: 320,
+                        suffix: '_n',
+                        upscale:false
+                    },{
+                        rename: false,
+                        width: 500,
+                        height: 500,
+                        upscale:false
+                    },{
+                        rename: false,
+                        width: 640,
+                        height: 640,
+                        suffix: '_z',
+                        upscale:false
+                    },{
+                        rename: false,
+                        width: 800,
+                        height: 800,
+                        suffix: '_c',
+                        upscale:false
+                    },{
+                        rename: false,
+                        width: 1024,
+                        height: 1024,
+                        suffix: '_b',
+                        upscale:false
+                    }
+                ]
+            },
+            files: [{
+                expand: true,
+                cwd: '<%= yeoman.dist %>/images/test',
+                src: '*.jpg',
+                dest: '<%= yeoman.dist %>/images/test'
+            }]
+        }
     }
   });
 
@@ -379,6 +438,7 @@ module.exports = function (grunt) {
     'uglify',
     'rev',
     'usemin',
+    'responsive_images',
     'htmlmin'
   ]);
 
