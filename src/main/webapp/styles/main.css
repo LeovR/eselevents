@@ -103,6 +103,7 @@ ul#strength {
 
 .eventgallery {
     background-color: white;
+    perspective: 800;
 }
 
 .eventgallery img {
@@ -117,7 +118,10 @@ ul#strength {
     height: 50px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
+    backface-visibility: hidden;
+    z-index: 1;
 }
+
 
 .event-info span {
     margin-left: 10px;
@@ -125,9 +129,30 @@ ul#strength {
 
 .event {
     background: black;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    overflow: visible !important;
+}
+.event.flipped {
+    transform: rotateY(-180deg);
+    background: lightgrey;
 }
 
-.main-container {
+.event .event-front {
+    z-index: 1;
+}
+
+.event .event-back {
+    transform: rotateY(-180deg);
+}
+
+.event-front, .event-back {
+    backface-visibility: hidden ;
+    z-index: 2;
+}
+
+.event-back {
+    background: lightgrey;
 }
 
 .animate-show {
