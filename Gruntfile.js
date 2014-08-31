@@ -401,6 +401,12 @@ module.exports = function (grunt) {
                 dest: '<%= yeoman.dist %>/images/events'
             }]
         }
+    },
+    'gh-pages': {
+        options: {
+            'base': 'src/main/webapp/dist'
+        },
+        src: '**/*'
     }
   });
 
