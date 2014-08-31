@@ -114,12 +114,12 @@ ul#strength {
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     width: 100%;
-    height: 50px;
+    height: 100px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
 
-.event-info span {
+.event-info div, .event-info h5 {
     margin-left: 10px;
 }
 
