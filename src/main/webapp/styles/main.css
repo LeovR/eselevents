@@ -139,3 +139,24 @@ ul#strength {
 .animate-show.ng-hide {
     opacity:0;
 }
+
+.event-coordinates {
+    position: relative;
+    top: 30%;
+    left: 20px;
+}
+
+.event-name {
+    color: white;
+    top: 25%;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 0;
+}
+
+.event-date {
+    margin-top: 0;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
