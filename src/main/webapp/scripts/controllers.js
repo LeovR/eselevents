@@ -5,14 +5,14 @@
 eseleventsApp.controller('MainController', ['$scope',
     function ($scope) {
         $scope.events = [
-            {name: 'Test1', image: '12536421345_e3d86c6862_o.jpg'},
-            {name: 'Test2', image: '1xfjhx44u_500.jpg'},
-            {name: 'Test3', image: '4476615215_0e86f50f94_o.jpg'},
-            {name: 'Test4', image: '6869659175_42d86c66d7_o.jpg'},
-            {name: 'Test5', image: '6hkaievfx5_500.jpg'},
-            {name: 'Test6', image: 'buxj4dnzk_500.jpg'},
-            {name: 'Test7', image: 'pvv8x1gsxf_500.jpg'},
-            {name: 'Test8', image: 'wlimiokqjm_500.jpg'}
+            {name: 'Test1', image: '12536421345_e3d86c6862_o.jpg', date: '01.11.2014', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam'},
+            {name: 'Test2', image: '1xfjhx44u_500.jpg', date: '01.11.2014', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam'},
+            {name: 'Test3', image: '4476615215_0e86f50f94_o.jpg', date: '01.11.2014', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam'},
+            {name: 'Test4', image: '6869659175_42d86c66d7_o.jpg', date: '01.11.2014', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam'},
+            {name: 'Test5', image: '6hkaievfx5_500.jpg', date: '01.11.2014', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam'},
+            {name: 'Test6', image: 'buxj4dnzk_500.jpg', date: '01.11.2014', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam'},
+            {name: 'Test7', image: 'pvv8x1gsxf_500.jpg', date: '01.11.2014', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam'},
+            {name: 'Test8', image: 'wlimiokqjm_500.jpg', date: '01.11.2014', description: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam'}
         ];
 
         $scope.showInfo = function(event,visibility) {
